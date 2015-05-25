@@ -1,6 +1,6 @@
-webpackJsonp([1],{
+webpackJsonp([3],{
 
-/***/ 5:
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21,24 +21,18 @@ webpackJsonp([1],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRouter = __webpack_require__(11);
-
-	/**
-	 * About App
-	 */
-
-	var About = (function (_Component) {
-	  function About() {
-	    _classCallCheck(this, About);
+	var Message = (function (_Component) {
+	  function Message() {
+	    _classCallCheck(this, Message);
 
 	    if (_Component != null) {
 	      _Component.apply(this, arguments);
 	    }
 	  }
 
-	  _inherits(About, _Component);
+	  _inherits(Message, _Component);
 
-	  _createClass(About, [{
+	  _createClass(Message, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2['default'].createElement(
@@ -47,26 +41,21 @@ webpackJsonp([1],{
 	        _react2['default'].createElement(
 	          'h3',
 	          null,
-	          'react-async-router demo'
+	          'message'
 	        ),
 	        _react2['default'].createElement(
 	          'p',
 	          null,
-	          'webpack + bundle-loader + react-router'
-	        ),
-	        _react2['default'].createElement(
-	          _reactRouter.Link,
-	          { to: 'home' },
-	          'back to home'
+	          this.props.id
 	        )
 	      );
 	    }
 	  }]);
 
-	  return About;
+	  return Message;
 	})(_react.Component);
 
-	exports['default'] = About;
+	exports['default'] = Message;
 	module.exports = exports['default'];
 
 /***/ }
