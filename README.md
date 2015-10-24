@@ -123,3 +123,8 @@ webpack-dev-server --port 3000 -w
 http://localhost:3000/bundle
 
 主要看浏览器中脚本的加载顺序以及名字，有惊喜。
+
+
+
+Oh, Sorry,还忘记了一点，React-Router的TestLocation不兼容IE8，但是你可以这样。
+https://github.com/rackt/react-router/issues/1475
